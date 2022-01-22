@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Login"
+        android:gravity="center"
+        android:textSize="65dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/purple_500"
+        android:fontFamily="cursive"
+        android:layout_height="wrap_content"/>
+
+    <!--this is the material design filled EditText with helper text-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filled_edit_text"
+        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="UserName"
+        app:helperText="Enter in text format only">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/userid"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outline_edit_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Password"
+        app:helperText="Enter in text format only">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/userpass"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:text="Login"
+            android:id="@+id/loginbutton"
+            android:textColor="#ffffff"
+            android:textSize="28dp"
+            android:layout_margin="40dp"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>

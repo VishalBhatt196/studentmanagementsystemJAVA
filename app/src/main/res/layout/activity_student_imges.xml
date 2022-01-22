@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentImges">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/image1"
+        android:background="@drawable/student1"
+        android:layout_height="200dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/image2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/student2"
+            android:layout_height="200dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/image3"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/student3"
+            android:layout_height="200dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/image4"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/student4"
+            android:layout_height="200dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/image5"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/student5"
+            android:layout_height="200dp"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
